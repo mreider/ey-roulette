@@ -7,7 +7,7 @@
 	<td valign="top" width="350">
 		<h3>Engine Yard University Roulette</h3>
 		<p class="but"><%= link_to "spin the wheel", games_path, :method => :post %></p>
-	<p style="font-size:300%"><%=@new_number %> Wins!</p>
+	<p style="font-size:300%"><%= format_roulette_num(@new_number) %> Wins!</p>
 	<p>Last 10 Spins:<br>
 		<table style="font-size:80%">
 			<% @games.each do |game| %>
